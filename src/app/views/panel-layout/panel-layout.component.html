@@ -1,0 +1,14 @@
+<app-navbar (tab)="loadData($event)"></app-navbar>
+<div class="panel-wrapper">
+<error-card *ngFor="let error of filteredErrors" 
+    [logType]="error.type" 
+    [logStatus]="error.ticket_status"
+    [location]="error.version"
+    [number]="error.number"
+    [testDate]="error.log_date"
+    [testInitials]="error.tester"
+    [testScript]="error.script"
+    [error]="error.error"
+    [progressStatus]="error.ticket_status">
+</error-card>
+</div>

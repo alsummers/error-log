@@ -1,0 +1,19 @@
+.notification-circle{
+    display:block;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    box-shadow: 0px 0px 0px 3px rgba(0,0,0,0.3);       
+    border-radius: 50%;
+    margin: .3em;
+}
+
+.error {
+    background-color: red;
+}
+.consideration {
+    background-color: rgb(236, 216, 29);
+}
+.change {
+    background-color: royalblue;
+}

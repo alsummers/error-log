@@ -1,0 +1,12 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+
+    mat-button-toggle-group{
+        width: 100%;
+
+        mat-button-toggle{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Allison Summers",
+            "initials": "AS",
+            "email": "allison.summers@weaverfundraising.com"
+        }
+    ],
+    "errors": [
+        {
+            "id": 1,
+            "number": 1,
+            "log_date": "2019-06-27",
+            "version": "PROD",
+            "type": "consideration",
+            "app": "Unit_Leader",
+            "tester": "AS",
+            "script": "UL900",
+            "comments": "",
+            "ticket_status": "fixed",
+            "error": "In first pane, could not log in.",
+            "bug_username": "a.summers" 
+        },
+        {
+            "id": 2,
+            "number": 2,
+            "log_date": "2019-06-27",
+            "version": "SANDBOX",
+            "type": "error",
+            "app": "Scout",
+            "tester": "AS",
+            "script": "R300",
+            "comments": "",
+            "ticket_status": "fixed",
+            "error": "In first pane, could not log in.",
+            "bug_username": "a.summers" 
+        },
+        {
+            "id": 3,
+            "number": 3,
+            "log_date": "2019-06-27",
+            "version": "DEV",
+            "type": "consideration",
+            "app": "Unit_Leader",
+            "tester": "AS",
+            "script": "r590",
+            "comments": "",
+            "ticket_status": "default",
+            "error": "After doing action, could not do another action.",
+            "bug_username": "a.summers" 
+        }
+    ]
+}
+

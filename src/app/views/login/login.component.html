@@ -1,10 +1,11 @@
 <div class="container">
     <mat-card class="login-form">
         <mat-card-title>Login</mat-card-title>
-        <form class="form" submit="login($event)">
+        <form class="form" (submit)="login(loginForm)" #loginForm="ngForm" novalidate>
             <mat-form-field>
-                <input matInput placeholder="email" [value]="email">
+                <input matInput name="email" #email="ngModel" placeholder="email" [(ngModel)]="username">
             </mat-form-field>
+            <button mat-flat-button class="right btn-blue">Login</button>
         </form>
     </mat-card>
 </div>

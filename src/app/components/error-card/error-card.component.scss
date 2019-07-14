@@ -1,0 +1,43 @@
+.log-grid{
+    display: grid;
+    grid-template-columns: 60px 120px 120px repeat(3,1fr);
+    grid-template-areas: item;
+
+    .item {
+        
+        &.number{
+            align-self: center;
+        }
+
+        &.status, &.testInfo {
+            justify-content: center;
+            align-self: center;
+            div {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+
+    }
+}
+mat-card{
+    margin: .2em;
+    padding: 10px;
+}
+
+
+
+.default {
+    mat-card{
+        background-color: rgba(235, 235, 235, 0.89);
+    }
+}
+
+.fixed {
+    mat-card{
+        background-color: rgba(235, 235, 235, 0.89);
+        opacity: .5;
+    }
+}
+
