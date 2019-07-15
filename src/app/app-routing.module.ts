@@ -13,10 +13,6 @@ const routes: Routes = [
       path: 'main',
       component: MainLayoutComponent,
     },
-    {
-      path: 'main/:view',
-      component: MainLayoutComponent
-    }
 ];
 
 @NgModule({

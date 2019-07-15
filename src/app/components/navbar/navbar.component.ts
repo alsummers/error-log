@@ -14,7 +14,7 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
+    this.tab.emit("Unit_Leader")
   }
 
   navigate(button: MatButtonToggle){

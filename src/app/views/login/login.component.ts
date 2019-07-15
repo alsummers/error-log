@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {NgForm} from '@angular/forms';
 import { Router } from '@angular/router';
+import { TableService } from 'src/app/services/table.service';
 
 @Component({
   selector: 'app-login',
@@ -10,22 +11,27 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   public username: string = "allison.summers@weaverfundraising.com"
 
-  constructor(public router: Router) { }
+  constructor(public router: Router, public db: TableService) { }
 
   ngOnInit() {
   }
 
   login(loginForm: NgForm){
       let email = loginForm.controls.email.value;
-
-      var f = email.substring(email.length - 22)
+      this.db.fetchUsers().subscribe((response) => {
+          let users: any;
+          users = response
+          let userCred = []
+          users.forEach((element) => {
+              userCred.push(element.email)
+          })
+          if(userCred.includes(email)){
+              this.router.navigate(['/main'])
+          } else {
+              return
+          }
+      })
       
-      if(f === "@weaverfundraising.com"){
-        console.log('confirm')
-        this.router.navigate(['main'])
-      } else {
-        console.log('cannot login')
-      }
   }
 
 }

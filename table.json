@@ -49,6 +49,20 @@
             "ticket_status": "default",
             "error": "After doing action, could not do another action.",
             "bug_username": "a.summers" 
+        },
+        {
+            "id": 4,
+            "number": 4,
+            "log_date": "2019-06-27",
+            "version": "DEV",
+            "type": "change",
+            "app": "Admin",
+            "tester": "AS",
+            "script": "A590",
+            "comments": "",
+            "ticket_status": "In Progress",
+            "error": "Change the font styles to windings.",
+            "bug_username": "a.summers" 
         }
     ]
 }

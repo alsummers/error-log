@@ -19,7 +19,9 @@ export class ErrorCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  
+    if(this.logStatus == 'In Progress'){
+        this.logStatus = 'default'
+    }
   }
 
 }

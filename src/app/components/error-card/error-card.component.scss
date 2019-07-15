@@ -7,6 +7,7 @@
         
         &.number{
             align-self: center;
+            border-right: 2px lightgray solid;
         }
 
         &.status, &.testInfo {
@@ -16,6 +17,11 @@
                 display: flex;
                 justify-content: center;
             }
+        }
+
+        &.progress {
+            justify-self: center;
+            align-self: center;
         }
 
 

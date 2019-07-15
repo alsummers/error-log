@@ -16,4 +16,8 @@ export class TableService {
     return this.http.get(API_URL + '/errors')
   };
 
+  fetchUsers(){
+      return this.http.get(API_URL + '/users')
+  }
+
 }

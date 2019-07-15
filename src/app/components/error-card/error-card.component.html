@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="item">{{ error }}</div>
-      <div class="item">{{ progressStatus !== 'default' ? progressStatus : '' }}</div>
+      <div class="item progress"><type-card [status] = "progressStatus" *ngIf="progressStatus !== 'default'"></type-card></div>
       <div class="item">Comments...</div>
     </div>
   </mat-card>

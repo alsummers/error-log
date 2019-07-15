@@ -20,7 +20,7 @@ export class PanelLayoutComponent implements OnInit{
     this.db.fetchTable().subscribe((response) => {
       this.errors = response;
       this.errors.forEach((element) => {
-        if(element.app == 'Unit_Leader' || 'Scout' || 'Popcorn'){
+        if(element.app == 'Unit_Leader' || element.app == 'Scout' || element.app == 'Popcorn'){
           element.error = 'As user ' + element.bug_username + '. ' + element.error
         }
         if(element.app == event){
