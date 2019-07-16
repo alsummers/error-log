@@ -7,6 +7,19 @@
 
         mat-button-toggle{
             width: 100%;
+
+            &.mat-button-toggle.mat-button-toggle-appearance-standard{
+                background-color: #e0e0e0;
+            }
+
+            &.mat-button-toggle.mat-button-toggle-appearance-standard.mat-button-toggle-checked{
+                background-color: white;
+                border-bottom-color: white !important;
+            }
+        }
+
+        &.mat-button-toggle-group-appearance-standard{
+            border-bottom: transparent;
         }
     }
 }
