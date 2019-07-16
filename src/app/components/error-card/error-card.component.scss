@@ -30,6 +30,7 @@
 mat-card{
     margin: .2em;
     padding: 10px;
+    font-size: 14px;
 }
 
 
@@ -43,7 +44,21 @@ mat-card{
 .fixed {
     mat-card{
         background-color: rgba(235, 235, 235, 0.89);
-        opacity: .5;
+        opacity: .4;
+    }
+}
+
+.fixed.sandbox {
+    mat-card{
+        background-color: rgba(253, 253, 108, 0.692);
+        opacity: .4;
+    }
+}
+
+.fixed.dev {
+    mat-card{
+        background-color: powderblue;
+        opacity: .4;
     }
 }
 

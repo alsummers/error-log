@@ -22,14 +22,15 @@ export class LoginComponent implements OnInit {
           let users: any;
           users = response
           let userCred = []
+          let userInitials = []
           users.forEach((element) => {
-              userCred.push(element.email)
+             if(element.email === email){
+                 localStorage.setItem('Initials', element.initials)
+                 this.router.navigate(['/main']);
+             } else {
+                 return
+             }
           })
-          if(userCred.includes(email)){
-              this.router.navigate(['/main'])
-          } else {
-              return
-          }
       })
       
   }

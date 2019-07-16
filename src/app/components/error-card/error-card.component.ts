@@ -15,6 +15,7 @@ export class ErrorCardComponent implements OnInit {
   @Input() testScript: string;
   @Input() error: string;
   @Input() progressStatus: string;
+  @Input() productionStatus: string;
 
   constructor() { }
 

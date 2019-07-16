@@ -7,6 +7,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +21,7 @@ import { ErrorCardComponent } from './components/error-card/error-card.component
 import { TypeCardComponent } from './components/type-card/type-card.component';
 import { LogTypeComponent } from './components/log-type/log-type.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TestbarComponent } from './components/testbar/testbar.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     PanelLayoutComponent,
     ErrorCardComponent,
     TypeCardComponent,
-    LogTypeComponent
+    LogTypeComponent,
+    TestbarComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +45,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     MatFormFieldModule,
     MatButtonModule,
     MatButtonToggleModule,
-    HttpClientModule
+    HttpClientModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,10 +6,15 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./main-layout.component.scss']
 })
 export class MainLayoutComponent implements OnInit {
+  public initials: string;
   constructor() { }
 
   ngOnInit() {
+    this.getTester()
   }
 
+  getTester(){
+      this.initials = localStorage.getItem('Initials')
+  }
 
 }

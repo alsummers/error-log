@@ -19,6 +19,7 @@
             "script": "UL900",
             "comments": "",
             "ticket_status": "fixed",
+            "production_status": "default",
             "error": "In first pane, could not log in.",
             "bug_username": "a.summers" 
         },
@@ -33,6 +34,7 @@
             "script": "R300",
             "comments": "",
             "ticket_status": "fixed",
+            "production_status": "sandbox",
             "error": "In first pane, could not log in.",
             "bug_username": "a.summers" 
         },
@@ -47,6 +49,7 @@
             "script": "r590",
             "comments": "",
             "ticket_status": "default",
+            "production_status": "default",
             "error": "After doing action, could not do another action.",
             "bug_username": "a.summers" 
         },
@@ -61,7 +64,23 @@
             "script": "A590",
             "comments": "",
             "ticket_status": "In Progress",
+            "production_status": "default",
             "error": "Change the font styles to windings.",
+            "bug_username": "a.summers" 
+        },
+        {
+            "id": 5,
+            "number": 5,
+            "log_date": "2019-06-27",
+            "version": "PROD",
+            "type": "consideration",
+            "app": "Scout",
+            "tester": "AS",
+            "script": "Scout Testing",
+            "comments": "",
+            "ticket_status": "fixed",
+            "production_status": "dev",
+            "error": "Remove 'add' column from table.",
             "bug_username": "a.summers" 
         }
     ]

@@ -11,7 +11,9 @@
     align-items: center;
 
 }
-
+mat-card {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
 .right {
     left: 80%;
 }
@@ -24,6 +26,8 @@
 }
 
 html, body {
-    background-color: rgb(247, 251, 255);
-    height: 100%
+    background-color: whitesmoke;
+    height: 100%;
+    font-weight: bold;
+    margin: 0;
 }
